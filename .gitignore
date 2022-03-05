@@ -14,3 +14,11 @@ _book
 *.epub
 *.mobi
 *.pdf
+
+#hidden folders and files
+.ansible/
+.terraform/
+.jenkins/
+.*/
+!.gitignore
+
