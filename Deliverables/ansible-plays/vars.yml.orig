@@ -1,3 +1,0 @@
-MAKE_DIR: /root/docker-compose
-COMPOSE_FILE: spring-petclinic-compose.yml
-
