@@ -1,31 +1,46 @@
-version: '2'
+version: '3.5'
 services:
   spring-petclinic-rest-visit:
     image: swagatam04/spring-petclinic-rest-visit:latest
+    container_name: rest-visit
+    tty: true
+    restart: unless-stopped
     cpu_shares: 100
     mem_limit: 524288000
     ports:
       - "8090:8080"
   spring-petclinic-rest-vet:
     image: swagatam04/spring-petclinic-rest-vet:latest
+    container_name: rest-vet
+    tty: true
+    restart: unless-stopped
     cpu_shares: 100
     mem_limit: 524288000
     ports:
       - "8091:8080"
   spring-petclinic-rest-system:
     image: swagatam04/spring-petclinic-rest-system:latest
+    container_name: rest-system
+    tty: true
+    restart: unless-stopped  
     cpu_shares: 100
     mem_limit: 524288000
     ports:
       - "8092:8080"
   spring-petclinic-rest-pet:
     image: swagatam04/spring-petclinic-rest-pet:latest
+    container_name: rest-pet
+    tty: true
+    restart: unless-stopped  
     cpu_shares: 100
     mem_limit: 524288000
     ports:
       - "8093:8080"
   spring-petclinic-rest-owner:
     image: swagatam04/spring-petclinic-rest-owner:latest
+    container_name: rest-owner
+    tty: true
+    restart: unless-stopped
     cpu_shares: 100
     mem_limit: 524288000
     ports:
