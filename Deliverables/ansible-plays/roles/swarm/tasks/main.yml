@@ -27,7 +27,7 @@
 
 
 - name: Run the docker-compose
-  shell: '/usr/local/bin/docker-compose -f "{{ MAKE_DIR }}"/"{{ COMPOSE_FILE }}" up -d' 
+  shell: '/usr/local/bin/docker-compose -f "{{ MAKE_DIR }}"/"{{ COMPOSE_FILE }}" up -d --build' 
   register: compose_result
 - debug: msg={{ compose_result }}
 

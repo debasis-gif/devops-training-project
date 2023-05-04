@@ -4,7 +4,7 @@ services:
     image: swagatam04/spring-petclinic-rest-visit:latest
     container_name: visit
     tty: true
-    restart: unless-stopped
+      #restart: unless-stopped
     cpu_shares: 100
     mem_limit: 524288000
     ports:
@@ -13,7 +13,7 @@ services:
     image: swagatam04/spring-petclinic-rest-vet:latest
     container_name: vet
     tty: true
-    restart: unless-stopped
+      #restart: unless-stopped
     cpu_shares: 100
     mem_limit: 524288000
     ports:
@@ -22,7 +22,7 @@ services:
     image: swagatam04/spring-petclinic-rest-system:latest
     container_name: system
     tty: true
-    restart: unless-stopped  
+      #restart: unless-stopped  
     cpu_shares: 100
     mem_limit: 524288000
     ports:
@@ -31,7 +31,7 @@ services:
     image: swagatam04/spring-petclinic-rest-pet:latest
     container_name: pet
     tty: true
-    restart: unless-stopped  
+      #restart: unless-stopped  
     cpu_shares: 100
     mem_limit: 524288000
     ports:
@@ -40,7 +40,7 @@ services:
     image: swagatam04/spring-petclinic-rest-owner:latest
     container_name: owner
     tty: true
-    restart: unless-stopped
+      #restart: unless-stopped
     cpu_shares: 100
     mem_limit: 524288000
     ports:
